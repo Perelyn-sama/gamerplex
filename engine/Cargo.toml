@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "core",
+    "math",
+    "ecs",
+    "renderer",
+    "physics",
+    "audio",
+    "input",
+    "resources",
+    "scripting",
+    "debug",
+    "examples",
+]
+
+resolver = "2"
