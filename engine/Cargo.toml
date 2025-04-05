@@ -1,7 +1,7 @@
 [workspace]
 members = [
     "core",
-    "math",
+    "gamerplex-math",
     "ecs",
     "renderer",
     "physics",

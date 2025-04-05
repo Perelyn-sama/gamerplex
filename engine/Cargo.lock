@@ -23,16 +23,19 @@ name = "examples"
 version = "0.1.0"
 
 [[package]]
-name = "input"
+name = "gamerplex-math"
 version = "0.1.0"
 
 [[package]]
-name = "math"
+name = "input"
 version = "0.1.0"
 
 [[package]]
 name = "physics"
 version = "0.1.0"
+dependencies = [
+ "gamerplex-math",
+]
 
 [[package]]
 name = "renderer"
