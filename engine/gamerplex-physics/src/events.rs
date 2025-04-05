@@ -1,6 +1,6 @@
 use gamerplex_math::Vector3;
 
-use crate::{handler::EntityId, world::World};
+use crate::{handles::EntityId, world::World};
 
 #[derive(Clone, Debug)]
 pub enum CollisionEventType {

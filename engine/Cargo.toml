@@ -4,7 +4,7 @@ members = [
     "gamerplex-math",
     "ecs",
     "renderer",
-    "physics",
+    "gamerplex-physics",
     "audio",
     "input",
     "resources",

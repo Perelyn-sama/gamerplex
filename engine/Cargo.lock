@@ -170,6 +170,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "gamerplex-physics"
+version = "0.1.0"
+dependencies = [
+ "crossbeam",
+ "gamerplex-math",
+ "rapier3d",
+]
+
+[[package]]
 name = "hash32"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -352,13 +361,6 @@ name = "paste"
 version = "1.0.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "57c0d7b74b563b49d38dae00a0c37d4d6de9b432382b2892f0574ddcae73fd0a"
-
-[[package]]
-name = "physics"
-version = "0.1.0"
-dependencies = [
- "gamerplex-math",
-]
 
 [[package]]
 name = "proc-macro2"

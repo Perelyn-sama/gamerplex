@@ -1,7 +1,7 @@
 use gamerplex_math::{Quaternion, Vector3};
 
 
-#[derive(Clone, Debug)]
+#[derive(Clone, Debug, PartialEq)]
 pub enum BodyType {
     Dynamic, // laws of physics aplies to these body types
     Static, // immovable objs like mountains and terrains

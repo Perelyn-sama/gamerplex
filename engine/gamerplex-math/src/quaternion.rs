@@ -61,4 +61,30 @@ impl Quaternion {
         }
     }
     
+    pub fn to_euler_angles(&self) -> Vector3 {
+        // Extract the components for readability
+        let x = self.x;
+        let y = self.y; 
+        let z = self.z;
+        let w = self.w;
+        
+        // Calculate pitch (x-axis rotation)
+        let pitch = f32::atan2(2.0 * (w * x + y * z), 1.0 - 2.0 * (x * x + y * y));
+        
+        // Calculate yaw (y-axis rotation)
+        // Clamp sinp between -1 and 1 to avoid NaN from asin
+        let sinp = 2.0 * (w * y - z * x);
+        let yaw = if sinp.abs() >= 1.0 {
+            f32::copysign(std::f32::consts::PI / 2.0, sinp) // Use 90 degrees if at the poles
+        } else {
+            f32::asin(sinp)
+        };
+        
+        // Calculate roll (z-axis rotation)
+        let roll = f32::atan2(2.0 * (w * z + x * y), 1.0 - 2.0 * (y * y + z * z));
+        
+        // Return as Vector3 in the order (pitch, yaw, roll)
+        Vector3::new(pitch, yaw, roll)
+    }
+    
 }

@@ -1,7 +1,9 @@
 [package]
-name = "physics"
+name = "gamerplex-physics"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
 gamerplex-math = { path = "../gamerplex-math" }
+rapier3d = "0.23.1"
+crossbeam = "0.8.4"
