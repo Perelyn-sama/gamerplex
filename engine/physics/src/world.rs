@@ -14,7 +14,7 @@ pub struct  World {
    simulation_rate: f32,
 
    // tracking
-   entity_body_map: HashMap<EntityId, BodyHandle>, // create BodyHandle and EntityId in handle.rs
+   pub entity_body_map: HashMap<EntityId, BodyHandle>, // create BodyHandle and EntityId in handle.rs
    body_entity_map: HashMap<BodyHandle, EntityId>,
 
    //collision event collection

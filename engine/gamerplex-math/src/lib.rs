@@ -1,8 +1,12 @@
 pub use vector::*;
-pub use quarternion::*;
+pub use quaternion::*;
+pub use transforms::*;
+pub use conversion::*;
 
 mod vector;
-mod quarternion;
+mod quaternion;
+mod transforms;
+mod conversion;
 
 #[cfg(feature = "debug")]
 pub mod debug;

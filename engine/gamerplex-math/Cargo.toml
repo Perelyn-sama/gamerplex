@@ -4,3 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+
+[features]
+default = []
+rapier = ["dep:rapier3d"]
+
+[dependencies.rapier3d]
+version = "0.23.1"
+optional = true
