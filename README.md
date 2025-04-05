@@ -3,5 +3,5 @@
 # Team 
 - Fx 
 - The Wuh
-- Ayomide 
+- Aiden
 - Perelyn
