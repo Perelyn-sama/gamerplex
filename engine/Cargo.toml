@@ -3,7 +3,7 @@ members = [
     "core",
     "gamerplex-math",
     "ecs",
-    "renderer",
+    "gamerplex-renderer",
     "gamerplex-physics",
     "audio",
     "input",
