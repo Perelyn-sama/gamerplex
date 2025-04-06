@@ -4,3 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+gamerplex-renderer = { path = "../gamerplex-renderer", features = ["wasm"] }
+gamerplex-math = { path = "../gamerplex-math" }
+gamerplex-physics = { path = "../gamerplex-physics" }
